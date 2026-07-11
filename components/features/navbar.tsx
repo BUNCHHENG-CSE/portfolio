@@ -37,7 +37,7 @@ const Navbar = ({isScrolled}: NavbarProps) => {
                         </div>
                         <span
                             className={`font-sans font-black text-xl sm:text-2xl tracking-tight ${isScrolled ? "text-white" : "text-black"} transition-colors duration-700`}>
-                            Dev<span className={isScrolled ? "text-[#C4C9FF]" : "text-zinc-800"}>.TCT</span>
+                            Arzur<span className={isScrolled ? "text-[#C4C9FF]" : "text-zinc-800"}>.TCT</span>
                         </span>
                     </Link>
                 </div>

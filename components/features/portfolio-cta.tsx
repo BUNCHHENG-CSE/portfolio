@@ -1,11 +1,13 @@
+"use client";
+
 import { motion } from "framer-motion";
 import React from 'react';
-import { Mail } from "lucide-react";
+import { Mail, Send } from "lucide-react";
 
 const PortfolioCta = () => {
     return (
-        <section className="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto mb-12">
-            {/* Outer Banner Card - Matches Hero Section Color */}
+        <section id="contact" className="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto mb-12">
+            {/* Outer Banner Card */}
             <div className="bg-[#C7CEFF] rounded-[40px] border-[6px] border-[#0a0a0a] overflow-hidden p-8 sm:p-12 lg:p-16 relative shadow-[0_0_40px_rgba(199,206,255,0.1)]">
 
                 {/* Background styling elements */}
@@ -49,7 +51,6 @@ const PortfolioCta = () => {
                                 className="bg-white hover:bg-zinc-50 text-[#111111] font-sans font-black px-8 py-4 rounded-full flex items-center justify-center gap-2.5 shadow-md transition-all text-base"
                             >
                                 <span>GitHub Profile</span>
-                              Github
                             </motion.a>
                         </div>
 
@@ -58,36 +59,64 @@ const PortfolioCta = () => {
                         </span>
                     </div>
 
-                    {/* Right Graphic: Animated Terminal replacing the Mascot */}
-                    <div className="lg:col-span-5 hidden lg:flex items-center justify-center select-none w-full relative">
-
-                        {/* Floating Yellow Badge */}
-                        <div className="absolute -top-4 right-4 z-20 bg-[#FFD23F] border-[3px] border-[#111111] rounded-[12px] px-4 py-1.5 shadow-md rotate-[6deg]">
-                            <p className="font-sans font-black text-sm text-[#111111] leading-none">
-                                Status: Online
-                            </p>
-                        </div>
+                    {/* Right Graphic: Animated Form matching the reference image */}
+                    <div className="lg:col-span-5 hidden lg:flex items-center justify-center w-full relative">
 
                         <motion.div
                             animate={{ y: [0, -10, 0] }}
                             transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
-                            className="w-full max-w-[380px] bg-[#111111] rounded-2xl shadow-[0_20px_50px_rgba(0,0,0,0.4)] overflow-hidden border-[4px] border-[#1c1c21] rotate-[2deg]"
+                            className="w-full max-w-md relative"
                         >
-                            {/* Terminal Header */}
-                            <div className="bg-[#1c1c21] border-b border-zinc-800/80 px-4 py-3 flex items-center gap-2.5">
-                                <div className="w-3 h-3 rounded-full bg-[#FF5F56]"></div>
-                                <div className="w-3 h-3 rounded-full bg-[#FFBD2E]"></div>
-                                <div className="w-3 h-3 rounded-full bg-[#27C93F]"></div>
-                                <div className="ml-2 text-xs font-mono text-zinc-500 font-medium">terminal</div>
+                            {/* Floating Yellow Badge (Moved inside motion.div for synced animation) */}
+                            <div className="absolute -top-5 right-2 z-20 bg-[#FFD23F] border-2 border-[#111111] rounded-[10px] px-3 py-1 shadow-md rotate-6">
+                                <p className="font-sans font-black text-[13px] text-[#111111] leading-none">
+                                    Status: Online
+                                </p>
                             </div>
 
-                            {/* Terminal Body */}
-                            <div className="p-6 font-mono text-[13px] leading-loose text-zinc-300 text-left">
-                                <p><span className="text-[#A5D6FF]">tct@portfolio</span><span className="text-zinc-500">:~</span>$ ./initiate_contact.sh</p>
-                                <p className="text-zinc-500 mt-2">{">"} Compiling project requirements...</p>
-                                <p className="text-zinc-500">{">"} Establishing secure connection...</p>
-                                <p className="text-[#79C0FF] mt-2 font-bold">Ready to build. Awaiting input...</p>
-                                <p className="animate-pulse text-zinc-500 mt-2">_</p>
+                            {/* Form Container */}
+                            <div className="bg-transparent rounded-2xl shadow-[0_20px_50px_rgba(0,0,0,0.4)] overflow-hidden  p-6 sm:p-7">
+                                <form className="space-y-4" onSubmit={(e) => e.preventDefault()}>
+
+                                    {/* Name Input */}
+                                    <div className="space-y-1.5 text-left">
+                                        <label className="text-xs font-mono font-medium text-primary ml-1">visitor.name</label>
+                                        <input
+                                            type="text"
+                                            placeholder="John Doe"
+                                            className="w-full  border border-[#2D313A] rounded-xl px-4 py-3.5 text-slate-200 placeholder:text-slate-600 focus:outline-none focus:border-[#222222] focus:ring-1 focus:ring-[#222222] transition-all text-sm"
+                                        />
+                                    </div>
+
+                                    {/* Email Input */}
+                                    <div className="space-y-1.5 text-left">
+                                        <label className="text-xs font-mono font-medium text-primary ml-1">visitor.email</label>
+                                        <input
+                                            type="email"
+                                            placeholder="john@example.com"
+                                            className="w-full border border-[#2D313A] rounded-xl px-4 py-3.5 text-slate-200 placeholder:text-slate-600 focus:outline-none focus:border-[#222222] focus:ring-1 focus:ring-[#222222] transition-all text-sm"
+                                        />
+                                    </div>
+
+                                    {/* Message Input */}
+                                    <div className="space-y-1.5 text-left">
+                                        <label className="text-xs font-mono font-medium text-primary ml-1">message.payload</label>
+                                        <textarea
+                                            rows={3}
+                                            placeholder="How can we collaborate?"
+                                            className="w-full border border-[#2D313A] rounded-xl px-4 py-3.5 text-slate-200 placeholder:text-slate-600 focus:outline-none focus:border-[#222222] focus:ring-1 focus:ring-[#222222] transition-all resize-none text-sm"
+                                        />
+                                    </div>
+
+                                    {/* Submit Button */}
+                                    <button
+                                        type="submit"
+                                        className="w-full bg-[#111111] hover:bg-[#222222] text-white font-sans font-black text-[15px] py-3.5 rounded-xl flex items-center justify-center gap-2 transition-all shadow-[0_0_15px_rgba(0,216,255,0.15)] mt-2 cursor-pointer"
+                                    >
+                                        <span>Transmit Data</span>
+                                        <Send size={18} strokeWidth={2.5} className={"text-[#C7CEFF]"} />
+                                    </button>
+                                </form>
                             </div>
                         </motion.div>
                     </div>

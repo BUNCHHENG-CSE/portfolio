@@ -1,7 +1,7 @@
 import React from 'react';
-import { FaPython ,FaReact} from "react-icons/fa6";
+import { FaPython ,FaReact,FaJava } from "react-icons/fa6";
 import {RiTailwindCssFill} from "react-icons/ri";
-
+import { BsJavascript } from "react-icons/bs";
 const technologies = [
     {
         name: 'Python',
@@ -49,6 +49,16 @@ const technologies = [
                 express
             </span>
         ),
+    },
+    {
+        name: 'Java',
+        svg: <FaJava className="w-6 h-6"/>,
+        fontClass: 'font-sans font-[500] tracking-tight',
+    },
+    {
+        name: 'Javascript',
+        svg: <BsJavascript className="w-6 h-6"/>,
+        fontClass: 'font-sans font-[500] tracking-tight',
     },
 ];
 

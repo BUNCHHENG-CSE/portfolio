@@ -22,7 +22,7 @@ const dedicatedFeatures = [
 
 const EngagementSection = () => {
     return (
-        <section id="contact" className="py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <section className="py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
             {/* Header */}
             <div className="text-center max-w-3xl mx-auto mb-16">
                 <span className="text-xs font-mono font-bold tracking-[0.25em] text-[#C4C9FF] uppercase bg-[#C4C9FF]/10 border border-[#C4C9FF]/20 px-4 py-1.5 rounded-full">

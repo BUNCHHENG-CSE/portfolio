@@ -121,8 +121,11 @@
 @layer base {
     * {
         @apply border-border outline-ring/50;
+        /* Hide scrollbar for Firefox */
 
     }
+
+
 
     body {
         @apply bg-background text-foreground;

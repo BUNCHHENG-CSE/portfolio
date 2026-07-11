@@ -15,6 +15,7 @@ import EngagementSection from "@/components/features/engagement-section";
 import PortfolioCta from "@/components/features/portfolio-cta";
 import AboutSection from "@/components/features/about-section";
 
+
 export default function Home() {
     const [isScrolled, setIsScrolled] = useState(false);
 
@@ -86,14 +87,7 @@ export default function Home() {
             <ServicesSection/>
             <EngagementSection/>
             <Testimonials/>
-            <motion.div
-                initial={{opacity: 0, scale: 0.98}}
-                whileInView={{opacity: 1, scale: 1}}
-                viewport={{once: true, margin: "-100px"}}
-                transition={{duration: 0.6}}
-            >
-                <PortfolioCta/>
-            </motion.div>
+            <PortfolioCta/>
             <Footer/>
 
         </div>

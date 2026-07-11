@@ -17,10 +17,10 @@ const Footer = () => {
                             className="flex items-center gap-2.5"
                         >
                             <div className="w-9 h-9 rounded-xl bg-[#111111] border border-zinc-800 flex items-center justify-center text-white shadow-lg">
-                                <Code2 className="w-5 h-5 text-[#C4C9FF]" />
+                                <span > A</span>
                             </div>
                             <span className="font-sans font-black text-xl tracking-tight text-white">
-                                Dev
+                                Arzur
                                 <span className="text-[#C4C9FF]">.TCT</span>
                             </span>
                         </Link>
@@ -40,15 +40,15 @@ const Footer = () => {
 
                         {/* Column 1: Navigation */}
                         <div className="space-y-4">
-                            <h5 className="font-mono font-bold text-xs text-white tracking-widest uppercase">
-                                Directory
-                            </h5>
-                            <ul className="space-y-3 text-zinc-400 text-sm font-medium">
-                                <li><a href="#projects" onClick={(e) => scrollToSection("#projects", e)} className="hover:text-white hover:translate-x-1 transition-all inline-block">Selected Works</a></li>
-                                <li><a href="#experience" onClick={(e) => scrollToSection("#experience", e)} className="hover:text-white hover:translate-x-1 transition-all inline-block">Experience</a></li>
-                                <li><a href="#capabilities" onClick={(e) => scrollToSection("#capabilities", e)} className="hover:text-white hover:translate-x-1 transition-all inline-block">Capabilities</a></li>
-                                <li><a href="#contact" onClick={(e) => scrollToSection("#contact", e)} className="hover:text-white hover:translate-x-1 transition-all inline-block">Engagement Models</a></li>
-                            </ul>
+                            {/*<h5 className="font-mono font-bold text-xs text-white tracking-widest uppercase">*/}
+                            {/*    Directory*/}
+                            {/*</h5>*/}
+                            {/*<ul className="space-y-3 text-zinc-400 text-sm font-medium">*/}
+                            {/*    <li><a href="#projects" onClick={(e) => scrollToSection("#projects", e)} className="hover:text-white hover:translate-x-1 transition-all inline-block">Selected Works</a></li>*/}
+                            {/*    <li><a href="#experience" onClick={(e) => scrollToSection("#experience", e)} className="hover:text-white hover:translate-x-1 transition-all inline-block">Experience</a></li>*/}
+                            {/*    <li><a href="#capabilities" onClick={(e) => scrollToSection("#capabilities", e)} className="hover:text-white hover:translate-x-1 transition-all inline-block">Capabilities</a></li>*/}
+                            {/*    <li><a href="#contact" onClick={(e) => scrollToSection("#contact", e)} className="hover:text-white hover:translate-x-1 transition-all inline-block">Engagement Models</a></li>*/}
+                            {/*</ul>*/}
                         </div>
 
                         {/* Column 2: Socials */}
@@ -83,7 +83,7 @@ const Footer = () => {
                 {/* Bottom copyright rule */}
                 <div className="mt-20 pt-8 border-t border-zinc-800/60 flex flex-col sm:flex-row items-center justify-between gap-4 text-center">
                     <p className="text-zinc-500 font-medium text-xs">
-                        © 2026 Dev.TCT. All rights reserved.
+                        © 2026 Arzur.TCT. All rights reserved.
                     </p>
                     <p className="text-zinc-600 font-mono text-[10px] uppercase tracking-[0.2em] font-bold">
                         Systems Architect // Full-Stack // Web3
