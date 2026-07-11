@@ -27,13 +27,13 @@ const PortfolioCta = () => {
                         </h2>
 
                         <p className="text-[#333333] text-base sm:text-lg font-medium mt-6 leading-relaxed max-w-md">
-                            From EVM smart contracts and algorithmic trading engines to high-performance Next.js interfaces and modular FiveM cores.
+                            From scalable Next.js interfaces and robust Spring Boot APIs to enterprise system administration and network operations.
                         </p>
 
                         {/* Buttons Group */}
                         <div className="flex flex-col sm:flex-row gap-4 mt-10 w-full sm:w-auto">
                             <motion.a
-                                href="mailto:your.email@example.com"
+                                href="mailto:bunchhenghangcs@gmail.com"
                                 whileHover={{ scale: 1.03 }}
                                 whileTap={{ scale: 0.98 }}
                                 className="bg-[#111111] hover:bg-[#222222] text-white font-sans font-black px-8 py-4 rounded-full flex items-center justify-center gap-2.5 shadow-xl transition-all text-base"
@@ -43,7 +43,7 @@ const PortfolioCta = () => {
                             </motion.a>
 
                             <motion.a
-                                href="https://github.com"
+                                href="https://github.com/bunchheng-cse"
                                 target="_blank"
                                 rel="noreferrer"
                                 whileHover={{ scale: 1.03 }}
@@ -54,9 +54,17 @@ const PortfolioCta = () => {
                             </motion.a>
                         </div>
 
-                        <span className="text-[11px] font-mono text-[#111111]/60 font-bold mt-8 tracking-widest uppercase">
-                            * Based in Phnom Penh • Available Worldwide
-                        </span>
+                        <div className="flex flex-col space-y-1 mt-8">
+                            <span className="text-[11px] font-mono text-[#111111]/80 font-bold tracking-widest uppercase">
+                                * LOC: St 369 Sangkat Praek Thmei, Khan Chbar Ampov, Phnom Penh
+                            </span>
+                            <span className="text-[11px] font-mono text-[#111111]/80 font-bold tracking-widest uppercase">
+                                * TZ: Phnom Penh / Indochina Time
+                            </span>
+                            <span className="text-[11px] font-mono text-[#111111]/80 font-bold tracking-widest uppercase">
+                                * TEL: +855 972093276
+                            </span>
+                        </div>
                     </div>
 
                     {/* Right Graphic: Animated Form matching the reference image */}
@@ -75,46 +83,46 @@ const PortfolioCta = () => {
                             </div>
 
                             {/* Form Container */}
-                            <div className="bg-transparent rounded-2xl shadow-[0_20px_50px_rgba(0,0,0,0.4)] overflow-hidden  p-6 sm:p-7">
+                            <div className="bg-[#1c1c21] rounded-2xl shadow-[0_20px_50px_rgba(0,0,0,0.4)] overflow-hidden border border-[#2D313A] p-6 sm:p-7">
                                 <form className="space-y-4" onSubmit={(e) => e.preventDefault()}>
 
                                     {/* Name Input */}
                                     <div className="space-y-1.5 text-left">
-                                        <label className="text-xs font-mono font-medium text-primary ml-1">visitor.name</label>
+                                        <label className="text-xs font-mono font-medium text-emerald-400 ml-1">visitor.name</label>
                                         <input
                                             type="text"
                                             placeholder="John Doe"
-                                            className="w-full  border border-[#2D313A] rounded-xl px-4 py-3.5 text-slate-200 placeholder:text-slate-600 focus:outline-none focus:border-[#222222] focus:ring-1 focus:ring-[#222222] transition-all text-sm"
+                                            className="w-full bg-[#111111] border border-[#2D313A] rounded-xl px-4 py-3.5 text-slate-200 placeholder:text-slate-600 focus:outline-none focus:border-[#C7CEFF] focus:ring-1 focus:ring-[#C7CEFF] transition-all text-sm"
                                         />
                                     </div>
 
                                     {/* Email Input */}
                                     <div className="space-y-1.5 text-left">
-                                        <label className="text-xs font-mono font-medium text-primary ml-1">visitor.email</label>
+                                        <label className="text-xs font-mono font-medium text-emerald-400 ml-1">visitor.email</label>
                                         <input
                                             type="email"
                                             placeholder="john@example.com"
-                                            className="w-full border border-[#2D313A] rounded-xl px-4 py-3.5 text-slate-200 placeholder:text-slate-600 focus:outline-none focus:border-[#222222] focus:ring-1 focus:ring-[#222222] transition-all text-sm"
+                                            className="w-full bg-[#111111] border border-[#2D313A] rounded-xl px-4 py-3.5 text-slate-200 placeholder:text-slate-600 focus:outline-none focus:border-[#C7CEFF] focus:ring-1 focus:ring-[#C7CEFF] transition-all text-sm"
                                         />
                                     </div>
 
                                     {/* Message Input */}
                                     <div className="space-y-1.5 text-left">
-                                        <label className="text-xs font-mono font-medium text-primary ml-1">message.payload</label>
+                                        <label className="text-xs font-mono font-medium text-emerald-400 ml-1">message.payload</label>
                                         <textarea
                                             rows={3}
                                             placeholder="How can we collaborate?"
-                                            className="w-full border border-[#2D313A] rounded-xl px-4 py-3.5 text-slate-200 placeholder:text-slate-600 focus:outline-none focus:border-[#222222] focus:ring-1 focus:ring-[#222222] transition-all resize-none text-sm"
+                                            className="w-full bg-[#111111] border border-[#2D313A] rounded-xl px-4 py-3.5 text-slate-200 placeholder:text-slate-600 focus:outline-none focus:border-[#C7CEFF] focus:ring-1 focus:ring-[#C7CEFF] transition-all resize-none text-sm"
                                         />
                                     </div>
 
                                     {/* Submit Button */}
                                     <button
                                         type="submit"
-                                        className="w-full bg-[#111111] hover:bg-[#222222] text-white font-sans font-black text-[15px] py-3.5 rounded-xl flex items-center justify-center gap-2 transition-all shadow-[0_0_15px_rgba(0,216,255,0.15)] mt-2 cursor-pointer"
+                                        className="w-full bg-white hover:bg-zinc-200 text-[#111111] font-sans font-black text-[15px] py-3.5 rounded-xl flex items-center justify-center gap-2 transition-all shadow-lg mt-2 cursor-pointer"
                                     >
                                         <span>Transmit Data</span>
-                                        <Send size={18} strokeWidth={2.5} className={"text-[#C7CEFF]"} />
+                                        <Send size={18} strokeWidth={2.5} className={"text-[#111111]"} />
                                     </button>
                                 </form>
                             </div>

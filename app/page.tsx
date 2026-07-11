@@ -4,7 +4,6 @@ import Footer from "@/components/features/footer";
 import {motion} from "framer-motion";
 import Navbar from "@/components/features/navbar";
 import HeroSection from "@/components/features/hero-section";
-import Testimonials from "@/components/features/testimonials";
 import PortfolioTechStack from "@/components/features/portfolio-tech-stack";
 import FeaturedProjects from "@/components/features/featured-projects";
 import ExperienceSection from "@/components/features/experience-section";
@@ -86,7 +85,7 @@ export default function Home() {
             <WorkflowHighlight/>
             <ServicesSection/>
             <EngagementSection/>
-            <Testimonials/>
+            {/*<Testimonials/>*/}
             <PortfolioCta/>
             <Footer/>
 

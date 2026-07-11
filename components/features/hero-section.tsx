@@ -1,7 +1,8 @@
+"use client"
 import {motion} from "framer-motion";
 import React from 'react';
 import {scrollToSection} from "@/lib/scroll-to-section";
-import {FileText, Rocket} from "lucide-react";
+import {Rocket} from "lucide-react";
 import {FaGithub} from "react-icons/fa6";
 import Link from "next/link";
 
@@ -42,7 +43,7 @@ const HeroSection = () => {
                                 transition={{duration: 0.6, delay: 0.1}}
                                 className="font-display font-black text-4xl sm:text-5xl lg:text-6xl text-zinc-950 tracking-tight leading-[1.05]"
                             >
-                                Engineering Modular Web & Web3 Systems
+                                Engineering Modular Web Systems & Responsive Interfaces
                             </motion.h1>
 
                             {/* Subtext description */}
@@ -52,12 +53,11 @@ const HeroSection = () => {
                                 transition={{duration: 0.6, delay: 0.2}}
                                 className="text-zinc-900/90 text-base sm:text-lg lg:text-xl font-medium mt-6 leading-relaxed max-w-xl"
                             >
-                                I build high-performance Next.js interfaces, EVM smart contracts, and algorithmic
-                                trading
-                                architecture. From
-                                <strong className="text-zinc-950 font-extrabold"> teaching the basics</strong> to
-                                engineering <strong className="text-zinc-950 font-extrabold">complex custom
-                                cores.</strong>
+                                I am a Computer Science student and Full Stack Developer building robust APIs and
+                                responsive Next.js interfaces. From
+                                <strong className="text-zinc-950 font-extrabold"> mastering backend CRUD
+                                    operations</strong> to
+                                engineering <strong className="text-zinc-950 font-extrabold">modern frontends.</strong>
                             </motion.p>
 
                             {/* Buttons Group */}
@@ -68,8 +68,8 @@ const HeroSection = () => {
                                 className="flex flex-col sm:flex-row gap-4 mt-8 w-full sm:w-auto"
                             >
                                 <motion.a
-                                    href="#pricing"
-                                    onClick={(e) => scrollToSection("#pricing", e)}
+                                    href="#projects"
+                                    onClick={(e) => scrollToSection("#projects", e)}
                                     whileHover={{scale: 1.03}}
                                     whileTap={{scale: 0.98}}
                                     className="bg-white hover:bg-zinc-50 text-zinc-950 font-display font-black px-6 py-3.5 rounded-full flex items-center justify-center gap-2.5 shadow-md border-2 border-transparent transition-all text-base"
@@ -84,7 +84,6 @@ const HeroSection = () => {
                                     className="bg-zinc-950 hover:bg-zinc-900 text-white font-display font-black px-6 py-3.5 rounded-full flex items-center justify-center gap-2.5 shadow-md transition-all text-base"
                                 >
                                     <span> GitHub</span>
-                                    {/*<FileText className="w-5 h-5 text-[#a4a6ff]"/>*/}
                                     <FaGithub className="w-5 h-5 text-[#a4a6ff]"/>
                                 </Link>
                             </motion.div>
@@ -100,12 +99,13 @@ const HeroSection = () => {
                                 <span className="opacity-50">•</span>
                                 <span>Full-Stack</span>
                                 <span className="opacity-50">•</span>
-                                <span>Blockchain</span>
+                                <span>Next.js</span>
+                                <span className="opacity-50">•</span>
+                                <span>Spring Boot</span>
                             </motion.p>
                         </div>
 
                         {/* Right Column: Code Editor */}
-                        {/* CHANGED: Replaced sm:hidden lg:block with hidden lg:flex */}
                         <div
                             className="lg:col-span-5 hidden lg:flex relative items-center justify-center select-none w-full h-full ">
 
@@ -143,21 +143,21 @@ const HeroSection = () => {
                                             className="text-[#79C0FF]">developer</span> <span
                                             className="text-[#FF7B72]">=</span> {'{'}</p>
                                         <p className="pl-4 text-[#D2A8FF]">name: <span
-                                            className="text-[#A5D6FF]">&#39;TCT&#39;</span>,</p>
+                                            className="text-[#A5D6FF]">&#39;Hang Bunchheng&#39;</span>,</p>
                                         <p className="pl-4 text-[#D2A8FF]">focus: <span
                                             className="text-zinc-300">[</span><span
                                             className="text-[#A5D6FF]">&#39;Next.js&#39;</span>, <span
-                                            className="text-[#A5D6FF]">&#39;Solidity&#39;</span><span
+                                            className="text-[#A5D6FF]">&#39;Spring Boot&#39;</span><span
                                             className="text-zinc-300">]</span>,</p>
                                         <p className="pl-4 text-[#D2A8FF]">projects: {'{'}</p>
-                                        <p className="pl-8 text-[#D2A8FF]">ecommerce: <span
-                                            className="text-[#A5D6FF]">&#39;TCT Store&#39;</span>,
+                                        <p className="pl-8 text-[#D2A8FF]">backend: <span
+                                            className="text-[#A5D6FF]">&#39;Car Management API&#39;</span>,
                                         </p>
-                                        <p className="pl-8 text-[#D2A8FF]">fiveM: <span
-                                            className="text-[#A5D6FF]">&#39;TCT Core UI&#39;</span>,
+                                        <p className="pl-8 text-[#D2A8FF]">frontend: <span
+                                            className="text-[#A5D6FF]">&#39;SMIS Platform&#39;</span>,
                                         </p>
-                                        <p className="pl-8 text-[#D2A8FF]">network: <span
-                                            className="text-[#A5D6FF]">&#39;Cisco Infra&#39;</span>
+                                        <p className="pl-8 text-[#D2A8FF]">sysadmin: <span
+                                            className="text-[#A5D6FF]">&#39;Desktop Admin&#39;</span>
                                         </p>
                                         <p className="pl-4">{'}'}</p>
                                         <p>{'}'};</p>

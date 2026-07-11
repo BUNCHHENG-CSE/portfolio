@@ -4,25 +4,25 @@ import { MessageSquareQuote } from "lucide-react";
 
 const reviews = [
     {
-        quote: "TCT's ability to break down complex Next.js and Zustand state management concepts completely transformed my learning journey. The curriculum was practical, modern, and incredibly well-structured.",
-        author: "Former Student",
-        title: "Frontend Engineering Cohort",
+        quote: "Bunchheng developed our administrative features with incredible attention to detail. The Next.js and Tailwind interfaces he built are responsive, accessible, and integrated perfectly with our backend APIs.",
+        author: "Project Manager",
+        title: "School Management System (SMIS)",
         avatarBg: "bg-[#C4C9FF]", // Periwinkle accent
-        initials: "FS",
+        initials: "PM",
     },
     {
-        quote: "Delivered a highly optimized smart contract and seamless frontend integration. The asset bridge between our L1 and L2 rollups was flawless. A true systems architect who understands web3 security.",
-        author: "Project Lead",
-        title: "Decentralized Exchange (DEX)",
+        quote: "His proactive approach to IT operations saved us countless hours. Whether it was troubleshooting software, managing user accounts, or ensuring network stability, he kept our enterprise hardware running flawlessly.",
+        author: "IT Director",
+        title: "GAMMA X SOLUTION CO.,LTD",
         avatarBg: "bg-cyan-400", // Tech cyan accent
-        initials: "PL",
+        initials: "ID",
     },
     {
-        quote: "The custom NoPixel-inspired core built for our server completely changed our community experience. 60 FPS locked, zero memory leaks, and a beautiful React UI bridged perfectly with Lua.",
-        author: "Server Owner",
-        title: "FiveM Roleplay Community",
+        quote: "An exceptional Computer Science student with a strong grasp of software architecture. His work on Spring Boot REST APIs and object-oriented projects demonstrates a maturity in building scalable systems.",
+        author: "Academic Mentor",
+        title: "Computer Science Faculty",
         avatarBg: "bg-emerald-400", // Success emerald accent
-        initials: "SO",
+        initials: "AM",
     },
 ];
 
@@ -39,7 +39,7 @@ const Testimonials = () => {
                     Don&#39;t just take my word for it
                 </h2>
                 <p className="text-zinc-400 text-sm sm:text-base mt-4 leading-relaxed font-medium">
-                    Feedback from the community owners, web3 project leads, and students I have had the pleasure of working with.
+                    Feedback from the project managers, IT directors, and academic mentors I have had the pleasure of working with.
                 </p>
             </div>
 

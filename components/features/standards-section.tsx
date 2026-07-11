@@ -5,44 +5,44 @@ import { motion } from "framer-motion";
 const comparisonData = [
     {
         feature: "Frontend Architecture",
-        myApproach: "Next.js 15/16 App Router & Zustand",
+        myApproach: "Next.js App Router & Tailwind CSS",
         myOk: true,
-        other: "Heavy Redux boilerplate & prop drilling",
+        other: "Unstructured styling & prop drilling",
         otherOk: false,
     },
     {
-        feature: "Smart Contract Security",
-        myApproach: "Gas-optimized, audited EVM logic",
+        feature: "Backend Architecture",
+        myApproach: "Modular Java Spring Boot REST APIs",
         myOk: true,
-        other: "Standard, unoptimized token templates",
+        other: "Tightly coupled legacy monoliths",
         otherOk: false,
     },
     {
-        feature: "Game Engine (FiveM)",
-        myApproach: "Modular Lua-to-React UI bridges",
+        feature: "Database Management",
+        myApproach: "Optimized MySQL & PostgreSQL CRUD",
         myOk: true,
-        other: "Heavy monolithic legacy scripts",
+        other: "Unindexed, redundant data queries",
         otherOk: false,
     },
     {
-        feature: "Algorithmic Trading",
-        myApproach: "Backtrader-tested Mean Reversion",
+        feature: "System Administration",
+        myApproach: "Proactive network & hardware stability",
         myOk: true,
-        other: "Untested, manual execution scripts",
+        other: "Reactive, temporary break-fix models",
         otherOk: false,
     },
     {
-        feature: "Infrastructure & Net",
-        myApproach: "Secure Layer 3 Cisco Routing & VLANs",
+        feature: "Software Engineering",
+        myApproach: "Object-Oriented Analysis & Design",
         myOk: true,
-        other: "Flat networks with default configs",
+        other: "Unplanned, spaghetti codebases",
         otherOk: false,
     },
     {
-        feature: "Mentorship & Code",
-        myApproach: "Production-ready, documented syllabus",
+        feature: "Development Workflow",
+        myApproach: "Git version control & continuous research",
         myOk: true,
-        other: "Outdated, theoretical tutorials",
+        other: "Manual uploads & stagnant skillsets",
         otherOk: false,
     },
 ];
@@ -64,7 +64,7 @@ const StandardsSection = () => {
                 </div>
                 <div className="lg:col-span-6 text-left">
                     <p className="text-zinc-400 text-base sm:text-lg font-medium leading-relaxed max-w-xl lg:ml-auto">
-                        Writing syntax is the easy part. I focus on building resilient, modular systems—whether that means bridging Layer 2 rollups, optimizing game server ticks, or designing scalable full-stack applications.
+                        Writing syntax is the easy part. I focus on building resilient, modular systems—whether that means engineering scalable Spring Boot APIs, optimizing enterprise network stability, or designing responsive Next.js applications.
                     </p>
                 </div>
             </div>
@@ -72,16 +72,16 @@ const StandardsSection = () => {
             {/* Comparison Grid Table */}
             <div className="bg-[#111111] border border-zinc-800/80 rounded-[32px] p-6 sm:p-10 overflow-hidden shadow-2xl">
                 <div className="overflow-x-auto w-full no-scrollbar">
-                    <table className="w-full text-left border-collapse min-w-[600px]">
+                    <table className="w-full text-left border-collapse min-w-150">
                         <thead>
                         <tr className="border-b border-zinc-800/80">
                             <th className="pb-6 font-sans font-bold text-zinc-400 text-sm w-1/3">Domain</th>
                             <th className="pb-6 font-sans font-bold text-white text-sm w-1/3">
                                 <div className="flex items-center gap-2">
                                     <div className="w-5 h-5 rounded-md bg-[#C4C9FF] flex items-center justify-center text-xs font-extrabold text-zinc-950">
-                                        TCT
+                                        HB
                                     </div>
-                                    <span>The TCT Standard</span>
+                                    <span>The HB Standard</span>
                                 </div>
                             </th>
                             <th className="pb-6 font-sans font-bold text-zinc-500 text-sm w-1/3">Status Quo</th>
@@ -100,7 +100,7 @@ const StandardsSection = () => {
                                 <td className="py-5 pr-4">
                                     <div className="flex items-center gap-3">
                                         <div className="w-5 h-5 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 flex items-center justify-center shrink-0">
-                                            <Check className="w-3 h-3 stroke-[3]" />
+                                            <Check className="w-3 h-3 stroke-3" />
                                         </div>
                                         <span className="text-white text-sm font-semibold">{row.myApproach}</span>
                                     </div>
@@ -110,7 +110,7 @@ const StandardsSection = () => {
                                 <td className="py-5">
                                     <div className="flex items-center gap-3 text-zinc-500">
                                         <div className="w-5 h-5 rounded-full bg-zinc-800/50 text-zinc-500 flex items-center justify-center shrink-0">
-                                            <X className="w-3 h-3 stroke-[3]" />
+                                            <X className="w-3 h-3 stroke-3" />
                                         </div>
                                         <span className="text-zinc-500 text-sm font-medium">{row.other}</span>
                                     </div>
@@ -126,7 +126,7 @@ const StandardsSection = () => {
                     <div className="flex items-center gap-3 text-left">
                         <Star className="w-6 h-6 text-[#C4C9FF] animate-pulse shrink-0" />
                         <p className="text-zinc-300 text-sm font-medium">
-                            Ready to upgrade your project&#39;s infrastructure or engineering curriculum?
+                            Ready to upgrade your project&#39;s architecture or enterprise infrastructure?
                         </p>
                     </div>
 

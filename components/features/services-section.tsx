@@ -7,34 +7,34 @@ const services = [
         id: "fullstack",
         badge: "Web Ecosystem",
         name: "Full-Stack Engineering",
-        desc: "End-to-end development of scalable web applications, secure e-commerce platforms, and internal administration tools.",
+        desc: "End-to-end development of scalable web applications, comprehensive administrative platforms, and responsive user interfaces.",
         color: "border-cyan-500/20 hover:border-cyan-500/50",
         glowColor: "group-hover:bg-cyan-500/10",
         accent: "text-cyan-400 bg-cyan-950/40 border border-cyan-500/20",
         dotColor: "bg-cyan-500/60",
-        details: ["Next.js App Router", "Express & Node.js", "Zustand State", "MongoDB Atlas"],
+        details: ["Next.js App Router", "React.js & Tailwind", "shadcn/ui Integration", "Python / Django"],
     },
     {
-        id: "web3",
-        badge: "Decentralized",
-        name: "Web3 & Smart Contracts",
-        desc: "Secure Solidity development, Layer 2 rollup integrations, and full decentralized application (dApp) architecture.",
+        id: "backend",
+        badge: "Server & Logic",
+        name: "Backend API Design",
+        desc: "Engineering robust RESTful APIs, designing modular CRUD operations, and managing relational database architecture.",
         color: "border-[#C4C9FF]/20 hover:border-[#C4C9FF]/50",
         glowColor: "group-hover:bg-[#C4C9FF]/10",
         accent: "text-[#C4C9FF] bg-[#C4C9FF]/10 border border-[#C4C9FF]/20",
         dotColor: "bg-[#C4C9FF]/60",
-        details: ["Solidity Contracts", "Hardhat Testing", "Asset Bridging", "EVM Optimization"],
+        details: ["Java Spring Boot", "Express.js", "MySQL & PostgreSQL", "REST API Endpoints"],
     },
     {
         id: "systems",
-        badge: "Infra & Logic",
-        name: "Systems Architecture",
-        desc: "Designing high-performance FiveM game cores, automated Python trading algorithms, and robust deployment pipelines.",
+        badge: "Infra & Hardware",
+        name: "IT Systems Admin",
+        desc: "Managing enterprise hardware configurations, ensuring stable network connectivity, and providing proactive workstation support.",
         color: "border-emerald-500/20 hover:border-emerald-500/50",
         glowColor: "group-hover:bg-emerald-500/10",
         accent: "text-emerald-400 bg-emerald-950/40 border border-emerald-500/20",
         dotColor: "bg-emerald-500/60",
-        details: ["FiveM / Lua Cores", "Python Trading Bots", "Dockerization", "Network Routing"],
+        details: ["Network Troubleshooting", "Workstation Setup", "Enterprise Software", "User Management"],
     },
 ];
 
@@ -51,7 +51,7 @@ const ServicesSection = () => {
                     Dedicated Engineering Services
                 </h2>
                 <p className="text-zinc-400 text-sm sm:text-base mt-4 leading-relaxed font-medium">
-                    Whether you are launching a web3 protocol or scaling an enterprise platform, I bring production-ready architecture to the table.
+                    Whether you need a scalable Spring Boot API, a modern Next.js interface, or reliable enterprise IT infrastructure, I bring structural precision to the table.
                 </p>
             </div>
 

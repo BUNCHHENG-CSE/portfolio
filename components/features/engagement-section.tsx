@@ -3,21 +3,21 @@ import { ArrowRight, Star, Terminal } from "lucide-react";
 import { motion } from "framer-motion";
 
 const consultingFeatures = [
-    "Full-stack architecture & deployment",
-    "Smart contract development & audits",
-    "Custom FiveM core engineering",
-    "Algorithmic trading bot setup",
+    "Full-stack Next.js & React architecture",
+    "Java Spring Boot REST API design",
+    "Database modeling (MySQL & PostgreSQL)",
+    "Responsive Tailwind CSS interfaces",
+    "Object-Oriented software engineering",
     "Milestone-based delivery sprints",
-    "Comprehensive technical documentation",
 ];
 
 const dedicatedFeatures = [
-    "Embedded technical leadership",
-    "Long-term infrastructure maintenance",
-    "Curriculum design & team mentoring",
-    "Dedicated availability (Phnom Penh / Indochina Time)",
-    "Ongoing smart contract & network secops",
-    "SLA response guarantees for critical systems",
+    "Embedded IT & technical support",
+    "Enterprise hardware administration",
+    "Long-term network maintenance",
+    "Dedicated availability (Phnom Penh Time / ICT)",
+    "Hardware troubleshooting & user onboarding",
+    "Continuous software & API scaling",
 ];
 
 const EngagementSection = () => {
@@ -33,7 +33,7 @@ const EngagementSection = () => {
                     something exceptional?
                 </h2>
                 <p className="text-zinc-400 text-sm sm:text-base mt-4 leading-relaxed font-medium">
-                    Whether you need a custom system built from scratch or a dedicated engineer to scale your existing infrastructure, I offer flexible engagement models.
+                    Whether you need a custom system built from scratch or a dedicated administrator to scale your existing infrastructure, I offer flexible engagement models.
                 </p>
             </div>
 
@@ -61,7 +61,7 @@ const EngagementSection = () => {
                             </div>
 
                             <p className="text-zinc-300 text-sm mt-5 leading-relaxed max-w-md font-medium">
-                                End-to-end delivery of specialized systems. Ideal for Next.js web applications, custom game cores, or decentralized protocols with clear scopes.
+                                End-to-end delivery of specialized systems. Ideal for Next.js web applications, scalable REST APIs, or robust enterprise databases with clear scopes.
                             </p>
                         </div>
 
@@ -86,7 +86,7 @@ const EngagementSection = () => {
                     {/* Action button */}
                     <div className="mt-12 text-left">
                         <motion.a
-                            href="mailto:your.email@example.com"
+                            href="mailto:bunchhenghangcs@gmail.com"
                             whileHover={{ scale: 1.02 }}
                             whileTap={{ scale: 0.98 }}
                             className="w-full bg-white hover:bg-zinc-200 text-zinc-950 font-sans font-black text-base py-4 rounded-full flex items-center justify-center gap-2 shadow-xl transition-all"
@@ -115,7 +115,7 @@ const EngagementSection = () => {
                             </div>
 
                             <p className="text-zinc-400 text-sm mt-5 leading-relaxed font-medium">
-                                Deep integration into your engineering team. Ideal for enterprise tech leadership, ongoing smart contract security, and continuous architectural scaling.
+                                Deep integration into your IT or engineering team. Ideal for enterprise desktop administration, ongoing hardware configuration, and full-stack software maintenance.
                             </p>
                         </div>
 
@@ -140,7 +140,9 @@ const EngagementSection = () => {
                     {/* Action button */}
                     <div className="mt-12 pt-8 border-t border-zinc-800/40">
                         <motion.a
-                            href="#" // Link to your resume PDF
+                            href="/Hang_Bunchheng_CV.pdf"
+                            target="_blank"
+                            rel="noopener noreferrer"
                             whileHover={{ scale: 1.02 }}
                             whileTap={{ scale: 0.98 }}
                             className="w-full bg-zinc-800/50 hover:bg-zinc-800 text-zinc-300 border border-zinc-700/50 font-sans font-bold text-sm py-4 rounded-full flex items-center justify-center gap-2 transition-all"

@@ -1,49 +1,51 @@
+"use client"
 import { motion } from "framer-motion";
 import React from 'react';
-import { ExternalLink,  Database, Gamepad2, LineChart, Code2 } from "lucide-react";
+import { ExternalLink, Database, Server, Smartphone, Cpu,  } from "lucide-react";
+import {FaGithub} from "react-icons/fa6";
 
 const projects = [
     {
-        id: "tct-core",
-        title: "TCT Core Framework",
-        category: "Game Engineering",
-        icon: <Gamepad2 className="w-5 h-5 text-amber-400" />,
-        description: "A high-performance, modular framework built for FiveM. Features a seamless Lua-to-Next.js bridge, powering a monolithic, responsive user interface inspired by advanced roleplay architectures.",
-        techStack: ["Next.js 15", "Lua", "Zustand", "TypeScript"],
-        links: { github: "#", live: "#" },
+        id: "car-management-api",
+        title: "Car Management API",
+        category: "Backend Architecture",
+        icon: <Server className="w-5 h-5 text-amber-400" />,
+        description: "Developed a robust RESTful API leveraging Java Spring Boot for a car management system. Engineered comprehensive CRUD operations with MySQL for data persistence and tested endpoints via Postman.",
+        techStack: ["Java", "Spring Boot", "MySQL"],
+        links: { github: "https://github.com/yourusername/spring-boot-sample-crud" },
         colSpan: "lg:col-span-8",
         bgPattern: "bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-amber-900/20 via-[#111] to-[#111]"
     },
     {
-        id: "smis",
-        title: "SMIS Platform",
-        category: "Enterprise Software",
+        id: "ecommerce-tasks",
+        title: "E-Commerce & Task Platform",
+        category: "Full-Stack Web",
         icon: <Database className="w-5 h-5 text-indigo-400" />,
-        description: "A comprehensive academic management system. Engineered with modular CRUD logic, lecturer tracking, and granular role-based access control (RBAC) for administrative staff.",
-        techStack: ["React", "Node.js", "Express", "MongoDB"],
-        links: { github: "#" },
+        description: "Developed backend logic, user workflows, and data models for a robust e-commerce platform alongside integrated task management web applications.",
+        techStack: ["Python", "Django"],
+        links: { github: "https://github.com/yourusername/Ecommerce_Project" },
         colSpan: "lg:col-span-4",
         bgPattern: "bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-indigo-900/20 via-[#111] to-[#111]"
     },
     {
-        id: "algo-engine",
-        title: "Execution & Trading Engine",
-        category: "Algorithmic Automation",
-        icon: <LineChart className="w-5 h-5 text-cyan-400" />,
-        description: "A dual-purpose architecture featuring a Dockerized, multi-language code compiler (integrated with Monaco Editor) and automated Mean Reversion trading bots using Python Backtrader.",
-        techStack: ["Python", "Docker", "Go", "Elysia.js"],
-        links: { github: "#" },
+        id: "iot-smart-home",
+        title: "IoT Smart Home Dashboard",
+        category: "Mobile & IoT",
+        icon: <Smartphone className="w-5 h-5 text-cyan-400" />,
+        description: "Created smart home dashboard prototypes and IoT management mobile applications, focusing on intuitive user experience and seamless device interaction.",
+        techStack: ["JavaScript", "React Native"],
+        links: { github: "https://github.com/yourusername/React-native-IoT-Smart-Home" },
         colSpan: "lg:col-span-5",
         bgPattern: "bg-[radial-gradient(ellipse_at_bottom_left,_var(--tw-gradient-stops))] from-cyan-900/20 via-[#111] to-[#111]"
     },
     {
-        id: "tct-ecommerce",
-        title: "TCT E-Commerce",
-        category: "Full-Stack Web",
-        icon: <Code2 className="w-5 h-5 text-emerald-400" />,
-        description: "A secure digital storefront integrating local phone validation logic with global payment sandboxes, including Stripe and PayPal, backed by scalable cloud database infrastructure.",
-        techStack: ["Express", "MongoDB Atlas", "Stripe API"],
-        links: { github: "#", live: "#" },
+        id: "enterprise-software",
+        title: "Enterprise Software Systems",
+        category: "Software Engineering",
+        icon: <Cpu className="w-5 h-5 text-emerald-400" />,
+        description: "Designed multiple iterations of Object-Oriented Analysis and Design (OOAD) projects, focusing on structured software engineering principles and efficient data management.",
+        techStack: ["C#"],
+        links: { github: "https://github.com/yourusername/OOADProject-V2" },
         colSpan: "lg:col-span-7",
         bgPattern: "bg-[radial-gradient(ellipse_at_bottom_right,_var(--tw-gradient-stops))] from-emerald-900/20 via-[#111] to-[#111]"
     }
@@ -80,7 +82,7 @@ const FeaturedProjects = () => {
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true }}
                     transition={{ delay: 0.2 }}
-                    href="https://github.com"
+                    href="https://github.com/yourusername" // Update with your actual GitHub profile URL
                     target="_blank"
                     rel="noreferrer"
                     className="flex items-center gap-2 text-zinc-400 hover:text-white font-mono text-sm uppercase tracking-widest transition-colors group pb-2"
@@ -99,7 +101,7 @@ const FeaturedProjects = () => {
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true, margin: "-50px" }}
                         transition={{ duration: 0.5, delay: index * 0.1 }}
-                        className={`group relative rounded-[32px] border border-zinc-800/60 hover:border-zinc-600/80 overflow-hidden ${project.bgPattern} ${project.colSpan} transition-colors duration-500 flex flex-col h-full min-h-[320px]`}
+                        className={`group relative rounded-[32px] border border-zinc-800/60 hover:border-zinc-600/80 overflow-hidden ${project.bgPattern} ${project.colSpan} transition-colors duration-500 flex flex-col h-full min-h-80`}
                     >
                         <div className="p-8 sm:p-10 flex flex-col h-full relative z-10">
                             {/* Card Header */}
@@ -116,14 +118,9 @@ const FeaturedProjects = () => {
                                 {/* Link Icons */}
                                 <div className="flex gap-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                                     {project.links.github && (
-                                        <a href={project.links.github} className="p-2 rounded-full bg-zinc-800 hover:bg-zinc-700 text-zinc-300 transition-colors">
-                                            {/*<Github className="w-4 h-4" />*/}
-                                            Github
-                                        </a>
-                                    )}
-                                    {project.links.live && (
-                                        <a href={project.links.live} className="p-2 rounded-full bg-zinc-800 hover:bg-zinc-700 text-zinc-300 transition-colors">
-                                            <ExternalLink className="w-4 h-4" />
+                                        <a href={project.links.github} target="_blank" rel="noreferrer" className="p-2 rounded-full bg-zinc-800 hover:bg-zinc-700 text-zinc-300 transition-colors flex items-center gap-2 text-sm font-medium">
+                                           <FaGithub className="w-4 h-4"/>
+                                            <span className="hidden sm:inline">Repo</span>
                                         </a>
                                     )}
                                 </div>

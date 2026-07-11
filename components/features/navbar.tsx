@@ -3,10 +3,9 @@ import React, {useState} from 'react';
 import {Menu, X} from "lucide-react";
 import Link from "next/link";
 import {scrollToSection} from "@/lib/scroll-to-section";
+import {ModeToggle} from "@/components/web/mode-toggle";
+import {NavbarProps} from "@/types/navbar";
 
-interface NavbarProps {
-    isScrolled: boolean;
-}
 
 const Navbar = ({isScrolled}: NavbarProps) => {
     const [isOpen, setIsOpen] = useState(false);
@@ -33,11 +32,11 @@ const Navbar = ({isScrolled}: NavbarProps) => {
                             className={`w-9 h-9 sm:w-10 sm:h-10 rounded-xl flex items-center justify-center font-mono font-extrabold text-sm sm:text-lg tracking-tight shadow-md transition-all duration-500 group-hover:scale-105 ${
                                 isScrolled ? "bg-white text-zinc-950" : "bg-white text-zinc-950"
                             }`}>
-                            <span>A</span>
+                            <span>H</span>
                         </div>
                         <span
                             className={`font-sans font-black text-xl sm:text-2xl tracking-tight ${isScrolled ? "text-white" : "text-black"} transition-colors duration-700`}>
-                            Arzur<span className={isScrolled ? "text-[#C4C9FF]" : "text-zinc-800"}>.TCT</span>
+                            Hang<span className={isScrolled ? "text-[#C4C9FF]" : "text-zinc-800"}> Bunchheng</span>
                         </span>
                     </Link>
                 </div>
@@ -49,7 +48,7 @@ const Navbar = ({isScrolled}: NavbarProps) => {
                             key={link.name}
                             href={link.href}
                             onClick={(e) => scrollToSection(link.href, e)}
-                            className={`text-[18px] font-semibold transition-colors duration-300 hover:opacity-70 ${isScrolled?"text-zinc-300 hover:text-white":"text-zinc-950 hover:text-black font-semibold"}`}
+                            className={`text-[18px] font-semibold transition-colors duration-300 hover:opacity-70 ${isScrolled ? "text-zinc-300 hover:text-white" : "text-zinc-950 hover:text-black font-semibold"}`}
                         >
                             {link.name}
                         </Link>
@@ -57,7 +56,8 @@ const Navbar = ({isScrolled}: NavbarProps) => {
                 </div>
 
                 {/* Desktop CTA */}
-                <div className="hidden lg:block">
+                <div className="hidden lg:flex items-center gap-3">
+
                     <button
                         onClick={(e) => scrollToSection("#about", e)}
                         className={`font-semibold text-[15px] px-6 py-2.5 rounded-full transition-all duration-300 hover:scale-95 active:scale-90 ${
@@ -66,15 +66,19 @@ const Navbar = ({isScrolled}: NavbarProps) => {
                     >
                         About Me
                     </button>
+                    <ModeToggle isScrolled={isScrolled}/>
                 </div>
 
                 {/* Mobile Menu Toggle */}
-                <button
-                    onClick={() => setIsOpen(true)}
-                    className="lg:hidden text-white transition-colors duration-300"
-                >
-                    <Menu className="w-7 h-7"/>
-                </button>
+                <div className="flex items-center gap-2 lg:hidden">
+                    <ModeToggle isScrolled={isScrolled}/>
+                    <button
+                        onClick={() => setIsOpen(true)}
+                        className="lg:hidden text-white transition-colors duration-300"
+                    >
+                        <Menu className="w-7 h-7"/>
+                    </button>
+                </div>
 
                 {/* Mobile Overlay */}
                 <div

@@ -39,13 +39,13 @@ const WorkflowHighlight = () => {
                                 <div className="w-0.5 h-6 border-l-2 border-dashed border-zinc-700"/>
                             </div>
 
-                            {/* Concept Row 2: TCT Architecture (Vibrant Highlighted) */}
+                            {/* Concept Row 2: HB Architecture (Vibrant Highlighted) */}
                             <motion.div
                                 whileHover={{ scale: 1.02 }}
                                 className="bg-[#C4C9FF]/10 rounded-2xl border-2 border-[#C4C9FF] p-5 relative shadow-[0_0_30px_rgba(196,201,255,0.15)]"
                             >
                                 <span className="absolute top-3 right-3 text-[9px] font-mono font-bold text-zinc-950 uppercase tracking-widest bg-[#C4C9FF] px-2 py-0.5 rounded">
-                                    The TCT Approach
+                                    The HB Approach
                                 </span>
                                 <div className="flex gap-4">
                                     <div className="w-10 h-10 rounded-full bg-[#C4C9FF] flex items-center justify-center text-zinc-950 shadow-md shrink-0">
@@ -54,7 +54,7 @@ const WorkflowHighlight = () => {
                                     <div>
                                         <h5 className="font-sans font-black text-base text-white">Systems Architect</h5>
                                         <p className="text-zinc-300 text-xs mt-1.5 leading-relaxed pr-2">
-                                            Builds modular, scalable ecosystems. Implements automated testing and comprehensive documentation.
+                                            Builds modular, scalable ecosystems. Implements clean OOP logic and comprehensive documentation.
                                         </p>
                                     </div>
                                 </div>
@@ -88,7 +88,7 @@ const WorkflowHighlight = () => {
                             Most developers focus purely on writing syntax to close the next ticket. This approach often leads to fragile codebases, undocumented logic, and systems that require constant manual intervention to stay afloat.
                         </p>
                         <p className="text-zinc-300">
-                            <strong className="text-[#C4C9FF] font-bold">I build self-sustaining ecosystems.</strong> Whether I am deploying an algorithmic trading bot, optimizing a FiveM server core, or constructing a Next.js web application, I engineer systems that are modular, performant, and built to scale autonomously.
+                            <strong className="text-[#C4C9FF] font-bold">I build self-sustaining ecosystems.</strong> Whether I am engineering a robust Java Spring Boot API, maintaining enterprise IT operations, or architecting a modular Next.js administrative platform, I engineer systems that are performant, secure, and built to scale autonomously.
                         </p>
                         <p className="border-l-[3px] border-[#C4C9FF] pl-5 py-1 font-sans font-bold text-lg text-white/90 italic">
                             &#34;Writing code is the easy part. Designing resilient architecture is what creates lasting value.&#34;
@@ -99,19 +99,19 @@ const WorkflowHighlight = () => {
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-4 gap-x-8 mt-10 w-full border-t border-zinc-800/80 pt-8">
                         <div className="flex items-center gap-3">
                             <div className="w-2 h-2 rounded-full bg-cyan-400 shadow-[0_0_8px_rgba(34,211,238,0.8)]"/>
-                            <span className="text-zinc-300 font-mono text-[11px] uppercase tracking-wider font-bold">Modular Architecture</span>
+                            <span className="text-zinc-300 font-mono text-[11px] uppercase tracking-wider font-bold">Full-Stack Architecture</span>
                         </div>
                         <div className="flex items-center gap-3">
                             <div className="w-2 h-2 rounded-full bg-cyan-400 shadow-[0_0_8px_rgba(34,211,238,0.8)]"/>
-                            <span className="text-zinc-300 font-mono text-[11px] uppercase tracking-wider font-bold">Obsidian Documentation</span>
+                            <span className="text-zinc-300 font-mono text-[11px] uppercase tracking-wider font-bold">Object-Oriented Design</span>
                         </div>
                         <div className="flex items-center gap-3">
                             <div className="w-2 h-2 rounded-full bg-cyan-400 shadow-[0_0_8px_rgba(34,211,238,0.8)]"/>
-                            <span className="text-zinc-300 font-mono text-[11px] uppercase tracking-wider font-bold">Automated Workflows</span>
+                            <span className="text-zinc-300 font-mono text-[11px] uppercase tracking-wider font-bold">REST API Development</span>
                         </div>
                         <div className="flex items-center gap-3">
                             <div className="w-2 h-2 rounded-full bg-cyan-400 shadow-[0_0_8px_rgba(34,211,238,0.8)]"/>
-                            <span className="text-zinc-300 font-mono text-[11px] uppercase tracking-wider font-bold">Core Web Vitals Optimized</span>
+                            <span className="text-zinc-300 font-mono text-[11px] uppercase tracking-wider font-bold">Enterprise IT Administration</span>
                         </div>
                     </div>
                 </div>
