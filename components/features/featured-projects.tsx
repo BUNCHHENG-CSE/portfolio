@@ -12,7 +12,7 @@ const projects = [
         icon: <Server className="w-5 h-5 text-amber-400" />,
         description: "Developed a robust RESTful API leveraging Java Spring Boot for a car management system. Engineered comprehensive CRUD operations with MySQL for data persistence and tested endpoints via Postman.",
         techStack: ["Java", "Spring Boot", "MySQL"],
-        links: { github: "https://github.com/yourusername/spring-boot-sample-crud" },
+        links: { github: "https://github.com/BUNCHHENG-CSE/spring-boot-sample-crud" },
         colSpan: "lg:col-span-8",
         bgPattern: "bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-amber-900/20 via-[#111] to-[#111]"
     },
@@ -23,7 +23,7 @@ const projects = [
         icon: <Database className="w-5 h-5 text-indigo-400" />,
         description: "Developed backend logic, user workflows, and data models for a robust e-commerce platform alongside integrated task management web applications.",
         techStack: ["Python", "Django"],
-        links: { github: "https://github.com/yourusername/Ecommerce_Project" },
+        links: { github: "https://github.com/BUNCHHENG-CSE/Ecommerce_Project" },
         colSpan: "lg:col-span-4",
         bgPattern: "bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-indigo-900/20 via-[#111] to-[#111]"
     },
@@ -34,7 +34,7 @@ const projects = [
         icon: <Smartphone className="w-5 h-5 text-cyan-400" />,
         description: "Created smart home dashboard prototypes and IoT management mobile applications, focusing on intuitive user experience and seamless device interaction.",
         techStack: ["JavaScript", "React Native"],
-        links: { github: "https://github.com/yourusername/React-native-IoT-Smart-Home" },
+        links: { github: "https://github.com/BUNCHHENG-CSE/React-native-IoT-Smart-Home" },
         colSpan: "lg:col-span-5",
         bgPattern: "bg-[radial-gradient(ellipse_at_bottom_left,_var(--tw-gradient-stops))] from-cyan-900/20 via-[#111] to-[#111]"
     },
@@ -45,7 +45,7 @@ const projects = [
         icon: <Cpu className="w-5 h-5 text-emerald-400" />,
         description: "Designed multiple iterations of Object-Oriented Analysis and Design (OOAD) projects, focusing on structured software engineering principles and efficient data management.",
         techStack: ["C#"],
-        links: { github: "https://github.com/yourusername/OOADProject-V2" },
+        links: { github: "https://github.com/BUNCHHENG-CSE/OOADProject-V2" },
         colSpan: "lg:col-span-7",
         bgPattern: "bg-[radial-gradient(ellipse_at_bottom_right,_var(--tw-gradient-stops))] from-emerald-900/20 via-[#111] to-[#111]"
     }
@@ -82,7 +82,7 @@ const FeaturedProjects = () => {
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true }}
                     transition={{ delay: 0.2 }}
-                    href="https://github.com/yourusername" // Update with your actual GitHub profile URL
+                    href="https://github.com/BUNCHHENG-CSE" // Update with your actual GitHub profile URL
                     target="_blank"
                     rel="noreferrer"
                     className="flex items-center gap-2 text-zinc-400 hover:text-white font-mono text-sm uppercase tracking-widest transition-colors group pb-2"

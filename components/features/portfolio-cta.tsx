@@ -88,7 +88,7 @@ const PortfolioCta = () => {
 
                                     {/* Name Input */}
                                     <div className="space-y-1.5 text-left">
-                                        <label className="text-xs font-mono font-medium text-emerald-400 ml-1">visitor.name</label>
+                                        <label className="text-xs font-mono font-medium text-zinc-400 ml-1">visitor.name</label>
                                         <input
                                             type="text"
                                             placeholder="John Doe"
@@ -98,7 +98,7 @@ const PortfolioCta = () => {
 
                                     {/* Email Input */}
                                     <div className="space-y-1.5 text-left">
-                                        <label className="text-xs font-mono font-medium text-emerald-400 ml-1">visitor.email</label>
+                                        <label className="text-xs font-mono font-medium text-zinc-400 ml-1">visitor.email</label>
                                         <input
                                             type="email"
                                             placeholder="john@example.com"
@@ -108,7 +108,7 @@ const PortfolioCta = () => {
 
                                     {/* Message Input */}
                                     <div className="space-y-1.5 text-left">
-                                        <label className="text-xs font-mono font-medium text-emerald-400 ml-1">message.payload</label>
+                                        <label className="text-xs font-mono font-medium text-zinc-400 ml-1">message.payload</label>
                                         <textarea
                                             rows={3}
                                             placeholder="How can we collaborate?"

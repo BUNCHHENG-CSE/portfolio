@@ -111,7 +111,7 @@ const AboutSection = () => {
                         </div>
                         <div className="flex items-center gap-3 bg-[#111111] border border-zinc-800/80 px-4 py-3 rounded-xl">
                             <Award className="w-5 h-5 text-cyan-400" />
-                            <span className="text-zinc-300 font-sans font-bold text-sm">Samsung Scholar</span>
+                            <span className="text-zinc-300 font-sans font-bold text-sm">Samsung Innovation Campus Scholar</span>
                         </div>
                     </motion.div>
 

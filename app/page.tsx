@@ -7,10 +7,6 @@ import HeroSection from "@/components/features/hero-section";
 import PortfolioTechStack from "@/components/features/portfolio-tech-stack";
 import FeaturedProjects from "@/components/features/featured-projects";
 import ExperienceSection from "@/components/features/experience-section";
-import StandardsSection from "@/components/features/standards-section";
-import WorkflowHighlight from "@/components/features/workflow-highlight";
-import ServicesSection from "@/components/features/services-section";
-import EngagementSection from "@/components/features/engagement-section";
 import PortfolioCta from "@/components/features/portfolio-cta";
 import AboutSection from "@/components/features/about-section";
 
@@ -81,11 +77,6 @@ export default function Home() {
             <AboutSection/>
             <FeaturedProjects/>
             <ExperienceSection/>
-            <StandardsSection/>
-            <WorkflowHighlight/>
-            <ServicesSection/>
-            <EngagementSection/>
-            {/*<Testimonials/>*/}
             <PortfolioCta/>
             <Footer/>
 
