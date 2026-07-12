@@ -143,11 +143,12 @@ const HeroSection = () => {
                                             className="text-chart-2">developer</span> <span
                                             className="text-chart-1">=</span> {'{'}</p>
                                         <p className="pl-4 text-foreground">name: <span
-                                            className="text-primary">&#39;Hang Bunchheng&#39;</span>,</p>
+                                            className="text-primary font-bold text-[1rem]">&#39;Hang Bunchheng&#39;</span>,</p>
                                         <p className="pl-4 text-foreground">focus: <span
                                             className="text-foreground">[</span><span
                                             className="text-primary">&#39;Next.js&#39;</span>, <span
-                                            className="text-primary">&#39;Spring Boot&#39;</span><span
+                                            className="text-primary">&#39;Spring Boot&#39;</span>, <span
+                                            className="text-primary">&#39;Python&#39;</span><span
                                             className="text-foreground">]</span>,</p>
                                         <p className="pl-4 text-foreground">projects: {'{'}</p>
                                         <p className="pl-8 text-foreground">backend: <span

@@ -21,6 +21,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
     title: "Hang Bunchheng - Full Stack Developer",
     description: "Hang Bunchheng - Full Stack Developer",
+    icons:"logo.png",
 };
 
 export default function RootLayout({

@@ -27,7 +27,7 @@ const AboutSection = () => {
 
                         <div className="absolute inset-0 bg-linear-to-tr from-card to-background group-hover:scale-105 transition-transform duration-700 ease-out" />
                         <Image
-                            src="/img1.jpg"
+                            src="/me.jpg"
                             alt="avatar"
                             fill
                             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
