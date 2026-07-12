@@ -28,7 +28,7 @@ export function ModeToggle({isScrolled}: NavbarProps) {
             size="icon"
             className={`h-11 w-11 rounded-full transition-all duration-300 hover:scale-95  font-semibold text-[15px]
             ${
-                isScrolled ? "dark:bg-[#C4C9FF]  dark:text-zinc-950  bg-zinc-900  text-white " : " bg-white/50  text-zinc-950 hover:bg-white dark:bg-zinc-900  dark:text-white dark:hover:bg-zinc-800"
+                isScrolled ? "bg-primary text-primary-foreground hover:opacity-90 shadow-md" : " bg-background/50 text-foreground hover:bg-background shadow-sm backdrop-blur-sm border border-border/50"
             }
           `}
             onClick={toggleTheme}

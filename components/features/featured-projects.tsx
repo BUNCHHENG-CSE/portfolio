@@ -14,7 +14,7 @@ const projects = [
         techStack: ["Java", "Spring Boot", "MySQL"],
         links: { github: "https://github.com/BUNCHHENG-CSE/spring-boot-sample-crud" },
         colSpan: "lg:col-span-8",
-        bgPattern: "bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-amber-900/20 via-[#111] to-[#111]"
+        bgPattern: "bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-amber-500/10 via-card to-card"
     },
     {
         id: "ecommerce-tasks",
@@ -25,7 +25,7 @@ const projects = [
         techStack: ["Python", "Django"],
         links: { github: "https://github.com/BUNCHHENG-CSE/Ecommerce_Project" },
         colSpan: "lg:col-span-4",
-        bgPattern: "bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-indigo-900/20 via-[#111] to-[#111]"
+        bgPattern: "bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-indigo-900/20 via-card to-card"
     },
     {
         id: "iot-smart-home",
@@ -36,7 +36,7 @@ const projects = [
         techStack: ["JavaScript", "React Native"],
         links: { github: "https://github.com/BUNCHHENG-CSE/React-native-IoT-Smart-Home" },
         colSpan: "lg:col-span-5",
-        bgPattern: "bg-[radial-gradient(ellipse_at_bottom_left,_var(--tw-gradient-stops))] from-cyan-900/20 via-[#111] to-[#111]"
+        bgPattern: "bg-[radial-gradient(ellipse_at_bottom_left,_var(--tw-gradient-stops))] from-cyan-900/20 via-card to-card]"
     },
     {
         id: "enterprise-software",
@@ -47,7 +47,7 @@ const projects = [
         techStack: ["C#"],
         links: { github: "https://github.com/BUNCHHENG-CSE/OOADProject-V2" },
         colSpan: "lg:col-span-7",
-        bgPattern: "bg-[radial-gradient(ellipse_at_bottom_right,_var(--tw-gradient-stops))] from-emerald-900/20 via-[#111] to-[#111]"
+        bgPattern: "bg-[radial-gradient(ellipse_at_bottom_right,_var(--tw-gradient-stops))] from-emerald-900/20 via-card to-card"
     }
 ];
 
@@ -60,9 +60,9 @@ const FeaturedProjects = () => {
                         initial={{ opacity: 0, y: 10 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
-                        className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-300 font-mono text-xs tracking-wide uppercase mb-6"
+                        className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-muted border border-border text-foreground font-mono text-xs tracking-wide uppercase mb-6"
                     >
-                        <span className="w-2 h-2 rounded-full bg-cyan-500 animate-pulse"></span>
+                        <span className="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
                         Selected Works
                     </motion.div>
                     <motion.h3
@@ -70,10 +70,10 @@ const FeaturedProjects = () => {
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ delay: 0.1 }}
-                        className="font-sans font-black text-4xl sm:text-5xl text-white tracking-tight"
+                        className="font-sans font-black text-4xl sm:text-5xl text-foreground tracking-tight"
                     >
                         Proven Architecture. <br className="hidden sm:block"/>
-                        <span className="text-zinc-500">Shipped Code.</span>
+                        <span className="text-muted-foreground">Shipped Code.</span>
                     </motion.h3>
                 </div>
 
@@ -85,7 +85,7 @@ const FeaturedProjects = () => {
                     href="https://github.com/BUNCHHENG-CSE" // Update with your actual GitHub profile URL
                     target="_blank"
                     rel="noreferrer"
-                    className="flex items-center gap-2 text-zinc-400 hover:text-white font-mono text-sm uppercase tracking-widest transition-colors group pb-2"
+                    className="flex items-center gap-2 text-muted-foreground hover:text-foreground font-mono text-sm uppercase tracking-widest transition-colors group pb-2"
                 >
                     View Full Archive
                     <ExternalLink className="w-4 h-4 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
@@ -101,16 +101,16 @@ const FeaturedProjects = () => {
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true, margin: "-50px" }}
                         transition={{ duration: 0.5, delay: index * 0.1 }}
-                        className={`group relative rounded-[32px] border border-zinc-800/60 hover:border-zinc-600/80 overflow-hidden ${project.bgPattern} ${project.colSpan} transition-colors duration-500 flex flex-col h-full min-h-80`}
+                        className={`group relative rounded-[32px] border border-border hover:border-primary/50 overflow-hidden ${project.bgPattern} ${project.colSpan} transition-colors duration-500 flex flex-col h-full min-h-80`}
                     >
                         <div className="p-8 sm:p-10 flex flex-col h-full relative z-10">
                             {/* Card Header */}
                             <div className="flex justify-between items-start mb-6">
                                 <div className="flex items-center gap-3">
-                                    <div className="p-3 rounded-2xl bg-zinc-900/80 border border-zinc-800 shadow-xl backdrop-blur-sm">
+                                    <div className="p-3 rounded-2xl bg-background/80 border border-border shadow-xl backdrop-blur-sm">
                                         {project.icon}
                                     </div>
-                                    <span className="font-mono text-xs font-bold uppercase tracking-widest text-zinc-500">
+                                    <span className="font-mono text-xs font-bold uppercase tracking-widest text-muted-foreground">
                                         {project.category}
                                     </span>
                                 </div>
@@ -118,7 +118,7 @@ const FeaturedProjects = () => {
                                 {/* Link Icons */}
                                 <div className="flex gap-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                                     {project.links.github && (
-                                        <a href={project.links.github} target="_blank" rel="noreferrer" className="p-2 rounded-full bg-zinc-800 hover:bg-zinc-700 text-zinc-300 transition-colors flex items-center gap-2 text-sm font-medium">
+                                        <a href={project.links.github} target="_blank" rel="noreferrer" className="p-2 rounded-full bg-background hover:bg-muted text-foreground transition-colors flex items-center gap-2 text-sm font-medium">
                                            <FaGithub className="w-4 h-4"/>
                                             <span className="hidden sm:inline">Repo</span>
                                         </a>
@@ -128,10 +128,10 @@ const FeaturedProjects = () => {
 
                             {/* Project Info */}
                             <div className="mt-auto">
-                                <h4 className="font-sans font-black text-2xl sm:text-3xl text-white mb-4 tracking-tight">
+                                <h4 className="font-sans font-black text-2xl sm:text-3xl text-foreground mb-4 tracking-tight">
                                     {project.title}
                                 </h4>
-                                <p className="text-zinc-400 text-sm sm:text-base leading-relaxed mb-8 max-w-xl">
+                                <p className="text-muted-foreground text-sm sm:text-base leading-relaxed mb-8 max-w-xl">
                                     {project.description}
                                 </p>
 
@@ -140,7 +140,7 @@ const FeaturedProjects = () => {
                                     {project.techStack.map((tech) => (
                                         <span
                                             key={tech}
-                                            className="px-3 py-1.5 rounded-lg bg-zinc-900/80 border border-zinc-800/80 text-zinc-300 font-mono text-[11px] uppercase tracking-wider font-semibold backdrop-blur-sm"
+                                            className="px-3 py-1.5 rounded-lg bg-background/80 border border-border text-foreground font-mono text-[11px] uppercase tracking-wider font-semibold backdrop-blur-sm"
                                         >
                                             {tech}
                                         </span>

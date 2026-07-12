@@ -55,13 +55,13 @@ const ExperienceSection = () => {
 
             {/* Title block */}
             <div className="flex flex-col items-center text-center max-w-3xl mx-auto mb-16">
-                <div className="text-xs font-mono font-bold tracking-[0.2em] text-[#C4C9FF] uppercase mb-4 bg-[#C4C9FF]/10 border border-[#C4C9FF]/20 px-4 py-1.5 rounded-full">
+                <div className="text-xs font-mono font-bold tracking-[0.2em] text-primary uppercase mb-4 bg-background/10 border border-primary/20 px-4 py-1.5 rounded-full">
                     Professional Background
                 </div>
-                <h2 className="font-sans font-black text-4xl sm:text-5xl text-white tracking-tight">
+                <h2 className="font-sans font-black text-4xl sm:text-5xl text-foreground tracking-tight">
                     Experience & Expertise
                 </h2>
-                <p className="text-zinc-400 text-base sm:text-lg mt-4 font-medium leading-relaxed max-w-2xl">
+                <p className="text-muted-foreground text-base sm:text-lg mt-4 font-medium leading-relaxed max-w-2xl">
                     From designing comprehensive curricula to engineering high-performance web3 and networking systems.
                 </p>
             </div>
@@ -80,11 +80,11 @@ const ExperienceSection = () => {
                                 onClick={() => setActiveTab(exp.id)}
                                 className={`flex items-center gap-4 px-5 py-4 rounded-xl font-sans font-bold text-sm text-left transition-all duration-300 shrink-0 lg:shrink ${
                                     isSelected
-                                        ? "bg-[#C4C9FF] text-zinc-950 shadow-lg border border-[#C4C9FF]"
-                                        : "bg-[#111111] text-zinc-400 hover:text-white hover:bg-[#161618] border border-zinc-800/60"
+                                        ? "bg-primary text-primary-foreground border-primary shadow-lg border "
+                                        : "bg-card text-muted-foreground hover:text-foreground hover:bg-muted border-border shadow-sm"
                                 }`}
                             >
-                                <IconComponent className={`w-5 h-5 ${isSelected ? "text-zinc-950" : "text-zinc-500"}`} />
+                                <IconComponent className={`w-5 h-5 ${isSelected ? "text-primary-foreground" : "text-muted-foreground"}`} />
                                 <span className="hidden lg:inline">{exp.name}</span>
                                 <span className="lg:hidden">{exp.shortName}</span>
                             </button>
@@ -93,7 +93,7 @@ const ExperienceSection = () => {
                 </div>
 
                 {/* Right Side: Animated Preview Card */}
-                <div className="lg:col-span-8 bg-[#111111] border border-zinc-800/80 rounded-[32px] overflow-hidden p-8 sm:p-10 min-h-120 flex flex-col justify-center shadow-2xl">
+                <div className="lg:col-span-8 bg-card border border-border rounded-[32px] overflow-hidden p-8 sm:p-10 min-h-120 flex flex-col justify-center shadow-2xl">
                     <AnimatePresence mode="wait">
                         <motion.div
                             key={activeTab}
@@ -105,21 +105,21 @@ const ExperienceSection = () => {
                         >
                             {/* Text Info */}
                             <div className="flex flex-col text-left">
-                                <span className="text-xs font-mono font-bold uppercase tracking-widest text-[#C4C9FF]">
+                                <span className="text-xs font-mono font-bold uppercase tracking-widest text-primary">
                                     Role Spotlight
                                 </span>
-                                <h3 className="font-sans font-black text-2xl sm:text-3xl text-white mt-3 leading-tight tracking-tight">
+                                <h3 className="font-sans font-black text-2xl sm:text-3xl text-foreground mt-3 leading-tight tracking-tight">
                                     {currentExperience.title}
                                 </h3>
-                                <p className="text-zinc-400 text-sm mt-4 leading-relaxed font-medium">
+                                <p className="text-muted-foreground text-sm mt-4 leading-relaxed font-medium">
                                     {currentExperience.desc}
                                 </p>
 
                                 {/* Bullets */}
                                 <ul className="mt-8 space-y-5">
                                     {currentExperience.bullets.map((bullet, i) => (
-                                        <li key={i} className="flex items-start gap-4 text-zinc-300 text-sm font-medium">
-                                            <span className="w-6 h-6 rounded-full bg-[#C4C9FF]/10 text-[#C4C9FF] flex items-center justify-center font-bold text-[11px] mt-0.5 shrink-0">
+                                        <li key={i} className="flex items-start gap-4 text-foreground/80 text-sm font-medium">
+                                            <span className="w-6 h-6 rounded-full bg-primary/10 text-primary flex items-center justify-center font-bold text-[11px] mt-0.5 shrink-0">
                                                 ✓
                                             </span>
                                             <span className="leading-relaxed">{bullet}</span>

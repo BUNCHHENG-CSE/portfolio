@@ -10,7 +10,7 @@ const technologies = [
     },
     {
         name: 'Next.js',
-        svg: null, // Removed the circle icon to match the text-only wordmark in the image
+        svg: null,
         customRender: () => (
             <div className="flex items-baseline font-sans">
                 <span className="font-extrabold text-[22px] tracking-tighter uppercase">
@@ -64,9 +64,9 @@ const technologies = [
 
 export default function PortfolioTechStack() {
     return (
-        <section className="py-10 sm:py-12 border-zinc-800/40 bg-zinc-950/20 ">
+        <section className="py-10 sm:py-12 ">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-                <p className="text-center text-neutral-500 text-[13px] sm:text-[14px] font-medium tracking-[1px] uppercase mb-8">
+                <p className="text-center text-muted-foreground text-[13px] sm:text-[14px] font-medium tracking-[1px] uppercase mb-8">
                     Core Technologies
                 </p>
 
@@ -75,7 +75,7 @@ export default function PortfolioTechStack() {
                     {technologies.map((tech, idx) => (
                         <div
                             key={idx}
-                            className="flex items-center gap-2.5 text-neutral-400 opacity-60 hover:opacity-100 hover:text-neutral-200 transition-all duration-300 cursor-default"
+                            className="flex items-center gap-2.5 text-muted-foreground opacity-60 hover:opacity-100 hover:text-foreground transition-all duration-300 cursor-default"
                             title={tech.name}
                         >
                             {tech.customRender ? (

@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const Footer = () => {
     return (
-        <footer className="bg-[#0a0a0a] border-t border-zinc-800/60 pt-20 pb-12 mt-12">
+        <footer className="bg-card border-t border-border pt-20 pb-12 mt-12">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="grid grid-cols-1 md:grid-cols-12 gap-12 text-left">
 
@@ -15,22 +15,22 @@ const Footer = () => {
                             onClick={(e) => scrollToSection("#", e)}
                             className="flex items-center gap-2.5"
                         >
-                            <div className="w-9 h-9 rounded-xl bg-[#111111] border border-zinc-800 flex items-center justify-center text-white shadow-lg">
+                            <div className="w-9 h-9 rounded-xl bg-foreground border border-border flex items-center justify-center text-background shadow-lg">
                                 <span className="font-bold">H</span>
                             </div>
-                            <span className="font-sans font-black text-xl tracking-tight text-white">
+                            <span className="font-sans font-black text-xl tracking-tight text-foreground">
                                 Hang
-                                <span className="text-[#C4C9FF]"> Bunchheng</span>
+                                <span className="text-primary"> Bunchheng</span>
                             </span>
                         </Link>
 
-                        <p className="text-zinc-400 font-medium text-sm leading-relaxed max-w-sm">
+                        <p className="text-muted-foreground font-medium text-sm leading-relaxed max-w-sm">
                             Engineering modular web ecosystems, robust Spring Boot APIs, and scalable Next.js interfaces.
                         </p>
 
-                        <div className="flex items-center gap-1.5 text-zinc-500 font-mono text-xs uppercase tracking-widest mt-4">
+                        <div className="flex items-center gap-1.5 text-muted-foreground font-mono text-xs uppercase tracking-widest mt-4">
                             <span>Engineered in</span>
-                            <span className="text-[#C4C9FF] font-bold">Phnom Penh, Cambodia</span>
+                            <span className="text-primary font-bold">Phnom Penh, Cambodia</span>
                         </div>
                     </div>
 
@@ -43,13 +43,13 @@ const Footer = () => {
 
                         {/* Column 2: Socials */}
                         <div className="space-y-4">
-                            <h5 className="font-mono font-bold text-xs text-white tracking-widest uppercase">
+                            <h5 className="font-mono font-bold text-xs text-foreground tracking-widest uppercase">
                                 Network
                             </h5>
-                            <ul className="space-y-3 text-zinc-400 text-sm font-medium">
-                                <li><Link href="https://github.com/bunchheng-cse" target="_blank" rel="noreferrer" className="hover:text-[#C4C9FF] transition-colors inline-block">GitHub ↗</Link></li>
-                                <li><Link href="https://www.linkedin.com/in/hang-bunchheng-21b56728a/" target="_blank" rel="noreferrer" className="hover:text-[#C4C9FF] transition-colors inline-block">LinkedIn ↗</Link></li>
-                                <li><Link href="https://t.me/bunchheng_hang" target="_blank" rel="noreferrer" className="hover:text-[#C4C9FF] transition-colors inline-block">Telegram ↗</Link></li>
+                            <ul className="space-y-3 text-muted-foreground text-sm font-medium">
+                                <li><Link href="https://github.com/bunchheng-cse" target="_blank" rel="noreferrer" className="hover:text-primary transition-colors inline-block">GitHub ↗</Link></li>
+                                <li><Link href="https://www.linkedin.com/in/hang-bunchheng-21b56728a/" target="_blank" rel="noreferrer" className="hover:text-primary transition-colors inline-block">LinkedIn ↗</Link></li>
+                                <li><Link href="https://t.me/bunchheng_hang" target="_blank" rel="noreferrer" className="hover:text-primary transition-colors inline-block">Telegram ↗</Link></li>
                             </ul>
                         </div>
 
@@ -58,10 +58,10 @@ const Footer = () => {
                             <h5 className="font-mono font-bold text-xs text-white tracking-widest uppercase">
                                 Connect
                             </h5>
-                            <ul className="space-y-3 text-zinc-400 text-sm font-medium">
-                                <li><a href="mailto:bunchhenghangcs@gmail.com" className="hover:text-white transition-colors inline-block">Email Me</a></li>
-                                <li><a href="tel:+855972093276" className="hover:text-white transition-colors inline-block">Call (+855 972093276)</a></li>
-                                <li><a href="/Hang_Bunchheng_CV.pdf" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors inline-block">Download Resume</a></li>
+                            <ul className="space-y-3 text-foreground text-sm font-medium">
+                                <li><a href="mailto:bunchhenghangcs@gmail.com" className="hover:text-foreground transition-colors inline-block">Email Me</a></li>
+                                <li><a href="tel:+855972093276" className="hover:text-foreground transition-colors inline-block">Call (+855 972093276)</a></li>
+                                <li><a href="/Hang_Bunchheng_CV.pdf" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors inline-block">Download Resume</a></li>
                             </ul>
                         </div>
 
@@ -70,11 +70,11 @@ const Footer = () => {
                 </div>
 
                 {/* Bottom copyright rule */}
-                <div className="mt-20 pt-8 border-t border-zinc-800/60 flex flex-col sm:flex-row items-center justify-between gap-4 text-center">
-                    <p className="text-zinc-500 font-medium text-xs">
+                <div className="mt-20 pt-8 border-t border-border flex flex-col sm:flex-row items-center justify-between gap-4 text-center">
+                    <p className="text-muted-foreground font-medium text-xs">
                         © 2026 Hang Bunchheng. All rights reserved.
                     </p>
-                    <p className="text-zinc-600 font-mono text-[10px] uppercase tracking-[0.2em] font-bold">
+                    <p className="text-muted-foreground font-mono text-[10px] uppercase tracking-[0.2em] font-bold">
                         Full-Stack // Systems Architect // IT Admin
                     </p>
                 </div>

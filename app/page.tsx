@@ -42,7 +42,6 @@ export default function Home() {
                         const targetId = href.substring(1);
                         const element = document.getElementById(targetId);
                         if (element) {
-                            // Smooth scroll with custom offset so section header is perfectly positioned
                             const yOffset = -90;
                             const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
                             window.scrollTo({top: y, behavior: "smooth"});
@@ -57,14 +56,14 @@ export default function Home() {
     }, []);
     return (
         <div
-            className="min-h-screen bg-zinc-950 font-sans text-white overflow-hidden selection:bg-[#a4a6ff] selection:text-zinc-950 w-full">
+            className="min-h-screen bg-background font-sans text-foreground overflow-hidden selection:bg-primary/30 selection:text-foreground w-full">
             <Navbar isScrolled={isScrolled}/>
             <div
                 className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-7xl h-250 pointer-events-none -z-10">
                 <div
-                    className="absolute top-24 left-1/4 w-100 h-100 bg-indigo-600/5 rounded-full blur-[120px]"/>
+                    className="absolute top-24 left-1/4 w-100 h-100 bg-primary/10 rounded-full blur-[120px]"/>
                 <div
-                    className="absolute top-48 right-1/4 w-125 h-125 bg-purple-600/5 rounded-full blur-[140px]"/>
+                    className="absolute top-48 right-1/4 w-125 h-125 bg-chart-2/10 rounded-full blur-[140px]"/>
             </div>
             <motion.div
                 initial={{opacity: 0, y: 30}}
@@ -79,7 +78,6 @@ export default function Home() {
             <ExperienceSection/>
             <PortfolioCta/>
             <Footer/>
-
         </div>
     );
 }
